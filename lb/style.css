@@ -1,0 +1,54 @@
+div#lb-container{
+    position: relative;
+    overflow: hidden;
+    display: table;
+}
+
+div#lb{
+    width: 700%;
+    position: relative;
+    left: -100%;
+}
+
+div#lb .lb-img{
+    width: calc(100% / 7);
+    float: left;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right{
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    color: #000000;
+    transition: opacity 1s;
+    font-size: 2em;
+}
+
+.glyphicon-chevron-left:hover, .glyphicon-chevron-right:hover{
+    opacity: 0.3;
+}
+
+.glyphicon-chevron-left{
+    left: 15%;
+}
+
+.glyphicon-chevron-right{
+    right: 15%;
+}
+
+ul#lb-choose{
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    margin-left: -5em;
+}
+
+ul#lb-choose li{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: rgba(0,0,0,0.3);
+    margin: 0 0.5em;
+    border-radius: 1em;
+    cursor: pointer;
+}
